@@ -7,7 +7,7 @@ sources.extend(glob("curve/ed25519/*.c"))
 sources.extend(glob("curve/ed25519/additions/*.c"))
 sources.extend(glob("curve/ed25519/nacl_sha512/*.c"))
 #headers = ['curve25519-donna.h']
-module_curve = Extension('axolotl_curve25519',
+module_curve = Extension('curve25519',
                     sources = sorted(sources),
 #                   headers = headers,
                     include_dirs = [
