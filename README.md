@@ -2,7 +2,7 @@ This is python wrapper for curve25519 library with ed25519 signatures. The C cod
 At the moment this wrapper is meant for use by [python-axolotl](http://github.com/tgalal/python-axolotl) and provides the following methods only:
 
 ```python
-import axolotl_curve25519 as curve
+import curve25519 as curve
 import os
 
 randm32 = os.urandom(32)
@@ -30,7 +30,7 @@ python setup.py install
  - Install [mingw](http://www.mingw.org/) compiler
  - Add mingw to your PATH
  - In PYTHONPATH\Lib\distutils create a file called distutils.cfg and add these lines:
- 
+
 ```
 [build]
 compiler=mingw32
@@ -39,5 +39,3 @@ compiler=mingw32
  - Install gcc: ```mingw-get.exe install gcc```
  - Install zlib [zlib](http://www.zlib.net/)
  - ```python setup.py install```
-
-
