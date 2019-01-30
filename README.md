@@ -1,5 +1,7 @@
-This is python wrapper for curve25519 library with ed25519 signatures. The C code was pulled from [libaxolotl-android](https://github.com/WhisperSystems/libaxolotl-android)
-At the moment this wrapper is meant for use by [python-axolotl](http://github.com/tgalal/python-axolotl) and provides the following methods only:
+This is python wrapper for curve25519 library with ed25519 signatures. The C code was pulled from [libsignal-protocol-java
+](https://github.com/signalapp/libsignal-protocol-java)
+
+At the moment this wrapper only provides the following methods only:
 
 ```python
 import curve25519 as curve
@@ -28,8 +30,8 @@ python setup.py install
 ## Windows
 
  - Install [mingw](http://www.mingw.org/) compiler
- - Add mingw to your PATH
- - In PYTHONPATH\Lib\distutils create a file called distutils.cfg and add these lines:
+ - Add `mingw` to your `PATH`
+ - In `PYTHONPATH\Lib\distutils` create a file called distutils.cfg and add these lines:
 
 ```
 [build]
@@ -37,5 +39,5 @@ compiler=mingw32
 ```
 
  - Install gcc: ```mingw-get.exe install gcc```
- - Install zlib [zlib](http://www.zlib.net/)
+ - Install [zlib](http://www.zlib.net/)
  - ```python setup.py install```
